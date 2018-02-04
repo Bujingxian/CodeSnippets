@@ -3,21 +3,36 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>pror</string>
+	<string>makecell</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property (nonatomic, class , readonly) &lt;#id#&gt; *&lt;#pointerName#&gt;;</string>
+	<string>- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
+    if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+        self.separatorInset = UIEdgeInsetsMake(0, 0, 0, 0);
+        self.selectionStyle = UITableViewCellSelectionStyleNone;
+        [self setupUI];
+    }
+    return self;
+}
+
+#pragma mark - Lazyload
+//&lt;#code#&gt;
+
+
+- (void)setupUI {
+    
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>68ABD1B8-DCC7-47FE-BCD9-539D0115807B</string>
+	<string>8635ACC1-14ED-43D3-856D-B174DDD38166</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>😸创建类属性，类名直接调用</string>
+	<string>自定义cell中的代码结构</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>😸@property class</string>
+	<string>😸Cell</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

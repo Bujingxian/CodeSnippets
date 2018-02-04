@@ -6,7 +6,7 @@
 	<string>proc</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassInterfaceMethods</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>@property (nonatomic,  copy ) &lt;#id#&gt; *&lt;#pointerName#&gt;;</string>
